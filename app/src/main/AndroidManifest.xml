@@ -21,18 +21,15 @@
             </intent-filter>
         </activity>
 
-        <meta-data android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
-        <!--Include the AdActivity configChanges and theme. -->
-        <activity android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
         <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
             android:theme="@android:style/Theme" />
 
-        <activity android:name="com.startapp.android.publish.AppWallActivity"
+        <activity android:name="com.startapp.android.publish.OverlayActivity"
             android:theme="@android:style/Theme.Translucent"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity android:name="com.startapp.android.publish.FullScreenActivity"
+            android:theme="@android:style/Theme"
             android:configChanges="orientation|keyboardHidden|screenSize" />
     </application>
 
